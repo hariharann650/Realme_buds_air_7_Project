@@ -8,6 +8,7 @@ interface ScrollytellingCanvasProps {
 }
 
 const TOTAL_FRAMES = 180;
+const FRAME_BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 export default function ScrollytellingCanvas({ onOpenPreOrder }: ScrollytellingCanvasProps) {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -31,7 +32,7 @@ export default function ScrollytellingCanvas({ onOpenPreOrder }: ScrollytellingC
     for (let i = 1; i <= TOTAL_FRAMES; i++) {
       const img = new Image();
       const frameIndex = String(i).padStart(3, "0");
-      img.src = `/frames/frame_${frameIndex}.jpg`;
+      img.src = `${FRAME_BASE_PATH}/frames/frame_${frameIndex}.jpg`;
 
       img.onload = () => {
         if (!isMounted) return;
