@@ -1,9 +1,15 @@
 /** @type {import('next').NextConfig} */
+const repositoryName = process.env.GITHUB_REPOSITORY?.split('/')[1];
+const basePath = process.env.GITHUB_ACTIONS && repositoryName
+  ? `/${repositoryName}`
+  : '';
+
 const nextConfig = {
-  output: 'export', // 👈 Forces Next.js to generate static HTML files
-  basePath: '/Realme_buds_air_7_Project', // 👈 REQUIRED: Matches your repository name so assets load
+  output: 'export',
+  basePath,
+  trailingSlash: true,
   images: {
-    unoptimized: true, // 👈 Required because GitHub Pages doesn't support Next.js image optimization server side
+    unoptimized: true,
   },
 };
 
