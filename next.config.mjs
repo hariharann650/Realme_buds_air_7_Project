@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  output: 'export', // 👈 Forces Next.js to generate static HTML files
+  basePath: '/Realme_buds_air_7_Project', // 👈 REQUIRED: Matches your repository name so assets load
   images: {
-    unoptimized: true,
+    unoptimized: true, // 👈 Required because GitHub Pages doesn't support Next.js image optimization server side
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
