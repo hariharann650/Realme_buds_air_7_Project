@@ -1,4 +1,4 @@
-// File: D:\Front-End Projects\desktop\RealMe Project\app\page.tsx
+// File: D:\Front-End Projects\desktop\RealMe Project\Realme_buds_air_7\app\page.tsx
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

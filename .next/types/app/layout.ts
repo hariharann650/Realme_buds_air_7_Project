@@ -1,4 +1,4 @@
-// File: D:\Front-End Projects\desktop\RealMe Project\app\layout.tsx
+// File: D:\Front-End Projects\desktop\RealMe Project\Realme_buds_air_7\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

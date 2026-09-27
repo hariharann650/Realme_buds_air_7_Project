@@ -57,12 +57,12 @@ export default function PreOrderModal({ isOpen, onClose }: PreOrderModalProps) {
               <div>
                 <span className="text-xs text-white/50 block font-mono">INTRODUCTORY PRICE</span>
                 <div className="flex items-baseline space-x-2 mt-0.5">
-                  <span className="text-3xl font-extrabold text-white">$69.00</span>
-                  <span className="text-sm text-white/40 line-through">$89.00</span>
+                  <span className="text-3xl font-extrabold text-white">₹ 3000.00</span>
+                  <span className="text-sm text-white/40 line-through">₹ 3200.00</span>
                 </div>
               </div>
               <span className="px-3 py-1 rounded-full bg-[#00E599]/15 border border-[#00E599]/30 text-[#00E599] text-xs font-semibold">
-                Save $20 Today
+                Save ₹ 200 Today
               </span>
             </div>
 
@@ -132,7 +132,7 @@ export default function PreOrderModal({ isOpen, onClose }: PreOrderModalProps) {
                 onClick={handleOrder}
                 className="w-full py-3.5 rounded-full text-sm font-semibold bg-gradient-to-r from-[#FFC915] to-[#F5A623] text-black shadow-[0_0_30px_rgba(255,201,21,0.35)] hover:shadow-[0_0_40px_rgba(255,201,21,0.55)] hover:scale-[1.01] transition-all"
               >
-                Confirm Order • $69.00
+                Confirm Order • ₹ 3000.00
               </button>
             </div>
           </div>
